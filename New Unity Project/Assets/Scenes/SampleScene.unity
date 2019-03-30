@@ -267,7 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476760741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.44, y: 3.16, z: -0.1250692}
+  m_LocalPosition: {x: 33.3, y: 3.16, z: -0.1250692}
   m_LocalScale: {x: 4.1107, y: 4.1107, z: 4.1107}
   m_Children: []
   m_Father: {fileID: 0}
@@ -287,10 +287,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Jupiter
   radio: 1
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 8
-  vel: 1.8
+  velOrbita: 1.5
+  velGiro: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +301,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -341,9 +341,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 54.63596
+  field of view: 28
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 61
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -367,12 +367,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.0115332585, y: -0, z: -0, w: 0.99993354}
-  m_LocalPosition: {x: -6.6, y: -1.7, z: -92.5}
+  m_LocalPosition: {x: -6.6, y: 8, z: -243}
   m_LocalScale: {x: 1.3035, y: 1.3035, z: 1.3035}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 1.322, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9397ed50dce8a64488421dfb6cd90bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &552059321
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,8 +471,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552059321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.73, y: 3.16, z: -0.13999999}
-  m_LocalScale: {x: 1.5463, y: 1.5463, z: 1.5463}
+  m_LocalPosition: {x: 53.3, y: 3.16, z: -0.13999999}
+  m_LocalScale: {x: 2.033539, y: 2.033539, z: 2.033539}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -479,10 +491,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Neptune
   radio: 1
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 5
-  vel: 2
+  velOrbita: 1.4
+  velGiro: 0
 --- !u!1 &673323940
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,8 +580,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673323940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.01, y: 3.12, z: -0.1250692}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 12.4, y: 3.12, z: -0.1250692}
+  m_LocalScale: {x: 2.2381, y: 2.2381, z: 2.2381}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -589,10 +600,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Venus
   radio: 1
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 7
-  vel: 1.2
+  velOrbita: 1.2
+  velGiro: 0
 --- !u!1 &1111619738
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,8 +689,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111619738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.26, y: 3.16, z: -0.13999999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 19.619999, y: 3.16, z: -0.13999999}
+  m_LocalScale: {x: 2.0721388, y: 2.0721388, z: 2.0721388}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -699,10 +709,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Earth
   radio: 1
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 3
-  vel: 1.4
+  velOrbita: 1.4
+  velGiro: 0
 --- !u!1 &1144823695
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,8 +798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144823695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.87, y: 3.16, z: -0.13999999}
-  m_LocalScale: {x: 0.92521, y: 0.92521, z: 0.92521}
+  m_LocalPosition: {x: 5.3, y: 3.16, z: -0.13999999}
+  m_LocalScale: {x: 1.9806675, y: 1.9806675, z: 1.9806675}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -809,10 +818,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Mercury
   radio: 1
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 4
-  vel: 1
+  velOrbita: 1
+  velGiro: 0
 --- !u!1 &1512659252
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,8 +907,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512659252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.66, y: 3.16, z: -0.14}
-  m_LocalScale: {x: 0.96586, y: 0.96586, z: 0.96586}
+  m_LocalPosition: {x: 26.32, y: 3.16, z: -0.14}
+  m_LocalScale: {x: 2.622503, y: 2.622503, z: 2.622503}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -919,10 +927,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Mars
   radio: 1
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 2
-  vel: 1.5
+  velOrbita: 1.1
+  velGiro: 0
 --- !u!1 &1663380050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,8 +1016,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663380050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.28, y: 3.16, z: -0.08}
-  m_LocalScale: {x: 1.7451, y: 1.7451, z: 1.7451}
+  m_LocalPosition: {x: 47.15, y: 3.16, z: -0.08}
+  m_LocalScale: {x: 2.217324, y: 2.217324, z: 2.217324}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1029,10 +1036,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Uranus
   radio: 0
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 1
-  vel: 1.97
+  velOrbita: 1.6
+  velGiro: 0
 --- !u!1 &1793710415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793710415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.54, y: 3.16, z: -0.13999999}
+  m_LocalPosition: {x: 40.510006, y: 3.16, z: -0.13999999}
   m_LocalScale: {x: 3.5675, y: 3.5675, z: 3.5675}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1139,10 +1145,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePlaneta: Saturn
   radio: 1
-  pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
-  angulo: 6
-  vel: 1.95
+  velOrbita: 1.7
+  velGiro: 0
 --- !u!1 &1999496182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1234,7 @@ Transform:
   m_GameObject: {fileID: 1999496182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.91, y: 3.5, z: -0.05}
-  m_LocalScale: {x: 8.8276, y: 8.8276, z: 8.8276}
+  m_LocalScale: {x: 14.745623, y: 14.745623, z: 14.745623}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10

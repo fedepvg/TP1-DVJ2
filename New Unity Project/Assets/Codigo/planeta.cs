@@ -6,9 +6,8 @@ public class planeta : MonoBehaviour
 {
     public string nombrePlaneta;
     public float radio;
-    public Vector3 pos;
     public GameObject sol;
-    public float angulo;
+    float angulo;
     public float velOrbita;
     public float velGiro;
 
@@ -33,6 +32,6 @@ public class planeta : MonoBehaviour
         Vector3 targetDir =  transform.position - sol.transform.position;
         angulo = Mathf.Atan2(targetDir.y, targetDir.x);
         orbitar();
-        
+        transform.Rotate(0, 2, 0, Space.Self);
     }
 }
