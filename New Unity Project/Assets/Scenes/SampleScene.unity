@@ -290,6 +290,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 8
+  vel: 1.8
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +482,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 5
+  vel: 2
 --- !u!1 &673323940
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +592,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 7
+  vel: 1.2
 --- !u!1 &1111619738
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +702,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 3
+  vel: 1.4
 --- !u!1 &1144823695
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +812,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 4
+  vel: 1
 --- !u!1 &1512659252
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +922,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 2
+  vel: 1.5
 --- !u!1 &1663380050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,10 +1028,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombrePlaneta: Uranus
-  radio: 1
+  radio: 0
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 1
+  vel: 1.97
 --- !u!1 &1793710415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1142,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   sol: {fileID: 1999496182}
   angulo: 6
+  vel: 1.95
 --- !u!1 &1999496182
 GameObject:
   m_ObjectHideFlags: 0
