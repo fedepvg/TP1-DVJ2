@@ -197,12 +197,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107777186}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.62, y: 3.16, z: -0.14}
-  m_LocalScale: {x: 2.260821, y: 2.260821, z: 2.260821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0910567, y: 1.0910567, z: 1.0910567}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1111619742}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &107777191
 MonoBehaviour:
@@ -211,9 +211,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107777186}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c224e32476f84ac4d8af226b0aacd194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
   planeta: {fileID: 1111619738}
@@ -394,8 +396,8 @@ MonoBehaviour:
   nombrePlaneta: Jupiter
   radio: 1
   sol: {fileID: 1999496182}
-  velOrbita: 1.5
-  velGiro: 0
+  velOrbita: 60
+  velGiro: 50
 --- !u!96 &476760747
 TrailRenderer:
   serializedVersion: 2
@@ -687,7 +689,7 @@ Transform:
   m_LocalScale: {x: 2.033539, y: 2.033539, z: 2.033539}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &552059326
 MonoBehaviour:
@@ -704,8 +706,8 @@ MonoBehaviour:
   nombrePlaneta: Neptune
   radio: 1
   sol: {fileID: 1999496182}
-  velOrbita: 1.4
-  velGiro: 0
+  velOrbita: 55
+  velGiro: 50
 --- !u!96 &552059327
 TrailRenderer:
   serializedVersion: 2
@@ -909,8 +911,8 @@ MonoBehaviour:
   nombrePlaneta: Venus
   radio: 1
   sol: {fileID: 1999496182}
-  velOrbita: 1.2
-  velGiro: 0
+  velOrbita: 50
+  velGiro: 50
 --- !u!96 &673323946
 TrailRenderer:
   serializedVersion: 2
@@ -1095,7 +1097,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.619999, y: 3.16, z: -0.13999999}
   m_LocalScale: {x: 2.0721388, y: 2.0721388, z: 2.0721388}
-  m_Children: []
+  m_Children:
+  - {fileID: 107777190}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1114,8 +1117,8 @@ MonoBehaviour:
   nombrePlaneta: Earth
   radio: 1
   sol: {fileID: 1999496182}
-  velOrbita: 1.4
-  velGiro: 0
+  velOrbita: 37
+  velGiro: 50
 --- !u!96 &1111619744
 TrailRenderer:
   serializedVersion: 2
@@ -1302,7 +1305,7 @@ Transform:
   m_LocalScale: {x: 1.9806675, y: 1.9806675, z: 1.9806675}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1144823700
 MonoBehaviour:
@@ -1319,8 +1322,8 @@ MonoBehaviour:
   nombrePlaneta: Mercury
   radio: 1
   sol: {fileID: 1999496182}
-  velOrbita: 1
-  velGiro: 0
+  velOrbita: 48
+  velGiro: 50
 --- !u!96 &1144823701
 TrailRenderer:
   serializedVersion: 2
@@ -1524,8 +1527,8 @@ MonoBehaviour:
   nombrePlaneta: Mars
   radio: 1
   sol: {fileID: 1999496182}
-  velOrbita: 1.1
-  velGiro: 0
+  velOrbita: 42
+  velGiro: 50
 --- !u!96 &1512659258
 TrailRenderer:
   serializedVersion: 2
@@ -1729,8 +1732,8 @@ MonoBehaviour:
   nombrePlaneta: Uranus
   radio: 0
   sol: {fileID: 1999496182}
-  velOrbita: 1.6
-  velGiro: 0
+  velOrbita: 50
+  velGiro: 50
 --- !u!96 &1663380056
 TrailRenderer:
   serializedVersion: 2
@@ -1917,7 +1920,7 @@ Transform:
   m_LocalScale: {x: 3.5675, y: 3.5675, z: 3.5675}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1793710420
 MonoBehaviour:
@@ -1934,8 +1937,8 @@ MonoBehaviour:
   nombrePlaneta: Saturn
   radio: 1
   sol: {fileID: 1999496182}
-  velOrbita: 1.7
-  velGiro: 0
+  velOrbita: 45
+  velGiro: 50
 --- !u!96 &1793710421
 TrailRenderer:
   serializedVersion: 2

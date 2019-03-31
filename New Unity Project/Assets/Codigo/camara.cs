@@ -10,7 +10,7 @@ public class camara : MonoBehaviour
     int contadorPosiciones = 0;
     float tiempoCamara;
     const float tiempoPorPos = 3f;
-    const float distanciaCamara = 10f;
+    const float distanciaCamara = 20f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class camara : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         tiempoCamara += Time.deltaTime;
         if (tiempoCamara >= (contadorPosiciones + 1) * tiempoPorPos)
