@@ -6,7 +6,7 @@ public class camara : MonoBehaviour
 {
     Vector3 posOriginal;
     const int cantPlanetas = 9;
-    public GameObject[] posCamara=new GameObject[cantPlanetas];
+    public GameObject[] posCamara/*=new GameObject[cantPlanetas]*/;
     int contadorPosiciones = 0;
     float tiempoCamara;
     const float tiempoPorPos = 3f;
