@@ -36,11 +36,14 @@ public class camara : MonoBehaviour
         switch(contadorPosiciones)
         {
             case 0:
+                transform.LookAt(posCamara[contadorPosiciones].transform.position);
                 transform.position = posOriginal;
                 break;
             default:
-                transform.position = new Vector3 (posCamara[contadorPosiciones].transform.position.x, posCamara[contadorPosiciones].transform.position.y, 
-                                    posCamara[contadorPosiciones].transform.position.z-distanciaCamara);
+                
+                transform.position = new Vector3 (posCamara[contadorPosiciones].transform.position.x , posCamara[contadorPosiciones].transform.position.y-distanciaCamara, 
+                                    posCamara[contadorPosiciones].transform.position.z - distanciaCamara);
+                transform.LookAt(posCamara[contadorPosiciones].transform.position);
                 break;
         }
     }
