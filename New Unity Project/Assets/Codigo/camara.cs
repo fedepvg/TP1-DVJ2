@@ -2,27 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camara : MonoBehaviour
+public class Camara : MonoBehaviour
 {
     Vector3 posOriginal;
     const int cantPlanetas = 9;
-    public GameObject[] posCamara/*=new GameObject[cantPlanetas]*/;
+    public GameObject[] posCamara;
     int contadorPosiciones = 0;
     float tiempoCamara;
-    const float tiempoPorPos = 3f;
+    public float tiempoPorPlaneta = 3f;
     const float distanciaCamara = 20f;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         posOriginal = transform.position;
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
         tiempoCamara += Time.deltaTime;
-        if (tiempoCamara >= (contadorPosiciones + 1) * tiempoPorPos)
+        if (tiempoCamara >= (contadorPosiciones + 1) * tiempoPorPlaneta)
         {
             contadorPosiciones++;
 
@@ -42,7 +40,7 @@ public class camara : MonoBehaviour
             default:
                 
                 transform.position = new Vector3 (posCamara[contadorPosiciones].transform.position.x , posCamara[contadorPosiciones].transform.position.y-distanciaCamara, 
-                                    posCamara[contadorPosiciones].transform.position.z - distanciaCamara);
+                                                    posCamara[contadorPosiciones].transform.position.z - distanciaCamara);
                 transform.LookAt(posCamara[contadorPosiciones].transform.position);
                 break;
         }

@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 107777189}
   - component: {fileID: 107777188}
   - component: {fileID: 107777187}
-  - component: {fileID: 107777191}
   m_Layer: 0
   m_Name: atmosferaTerrestre
   m_TagString: Untagged
@@ -204,21 +203,6 @@ Transform:
   m_Father: {fileID: 1111619742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &107777191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107777186}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c224e32476f84ac4d8af226b0aacd194, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planeta: {fileID: 1111619738}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,8 +377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Jupiter
-  radio: 1
   sol: {fileID: 1999496182}
   velOrbita: 60
   velGiro: 50
@@ -598,6 +580,7 @@ MonoBehaviour:
   - {fileID: 1793710415}
   - {fileID: 1663380050}
   - {fileID: 552059321}
+  tiempoPorPos: 3
 --- !u!1 &552059321
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,8 +686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Neptune
-  radio: 1
   sol: {fileID: 1999496182}
   velOrbita: 55
   velGiro: 50
@@ -908,8 +889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Venus
-  radio: 1
   sol: {fileID: 1999496182}
   velOrbita: 50
   velGiro: 50
@@ -1114,8 +1093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Earth
-  radio: 1
   sol: {fileID: 1999496182}
   velOrbita: 37
   velGiro: 50
@@ -1319,8 +1296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Mercury
-  radio: 1
   sol: {fileID: 1999496182}
   velOrbita: 48
   velGiro: 50
@@ -1524,8 +1499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Mars
-  radio: 1
   sol: {fileID: 1999496182}
   velOrbita: 42
   velGiro: 50
@@ -1729,8 +1702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Uranus
-  radio: 0
   sol: {fileID: 1999496182}
   velOrbita: 50
   velGiro: 50
@@ -1934,8 +1905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d6e7a1fbfd95d46b6d80d178cef89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePlaneta: Saturn
-  radio: 1
   sol: {fileID: 1999496182}
   velOrbita: 45
   velGiro: 50

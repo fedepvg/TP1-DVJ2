@@ -286,6 +286,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  tiempoPorPlaneta: 3
 --- !u!1 &845991833
 GameObject:
   m_ObjectHideFlags: 0
